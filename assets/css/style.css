@@ -13,8 +13,13 @@ body {
 
 html, body {
   width: 100%;
-  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+  overflow-x: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0; /* Prevents unwanted horizontal scrolling */
 }
+
 
 h1 {
     font-size: 70px;
@@ -167,6 +172,9 @@ h3 {
   gap: 50px;
   margin-top: 100px;
   color: black;
+  /* background-image: url("https://static.wikia.nocookie.net/historical-figures-and-celebrity/images/9/94/Nikotheseal.jpg/revision/latest?cb=20260515184526");
+  background-size: cover;
+  background-position: center; */
 
 }
 .information h2 {
@@ -202,9 +210,9 @@ h3 {
   gap: 20px
 }
 hr {
-  border: 2px;
-  height: 2px;
-  background-color: #333333;
+  border: 4px;
+  height: 4px;
+  background-color: gold;
   margin: 20px 0;
 }
 
@@ -337,6 +345,8 @@ item1:hover {
   gap: 40px;
   justify-content: center;
   text-align: center;
+  position: relative;
+  overflow: hidden; /* Contains any stray animation movement */
 
 }
 .hosts {
@@ -590,3 +600,209 @@ item1:hover {
   flex-direction: column;
   text-align: center;
 }
+.consumerimg {
+  text-align: center;
+}
+.consumerimg img{
+  margin: auto auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 500px;
+  height: 350px;
+}
+.adaptinfodisplay {
+  text-align: center;
+  justify-content: center;
+  width: 900px;
+  text-align: center;
+  justify-content: center;
+  margin: auto auto;
+  font-size: 20px;
+    margin-top: 50px;
+}
+.adaptinfodivide {
+  position: relative;
+  overflow: hidden; /* Contains any stray animation movement */
+  display: grid;
+  grid-template-columns: 450px 10px 450px;
+  text-align: center;
+  justify-content: center;
+
+}
+.divide1 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+
+}
+.divide1example {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.divide1example h3 {
+  color: rgb(166, 142, 7);
+}
+.divide1example img {
+  border-radius: 2%;
+  width: 200px;
+  height: 160px;
+  text-align: center;
+  justify-content: center;
+  margin: auto auto;
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px); /* Start slightly below */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0); /* Move smoothly into place */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Internet Explorer, Edge, and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.travel {
+    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+
+}
+.travelinfodisplay {
+  width: 1000px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  font-size: 20px;
+  margin: auto auto;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+html,
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.practices {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+
+}
+.practiceinfo {
+  width: 1000px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  font-size: 20px;
+  margin: auto auto;
+}
+.practiceinfodisplay {
+    text-align: left;
+}
+.slider-wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: sans-serif;
+}
+
+/* Horizontal Label Slider Container */
+.label-slider {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+.label-slider::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome/Safari */
+}
+
+/* Individual Label Buttons */
+.label-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.label-btn:hover {
+  background: #e0e0e0;
+}
+
+/* Active Label Style */
+.label-btn.active {
+  background: #111;
+  color: #fff;
+}
+
+/* Content Section Below */
+.content-section {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Hide all content panels by default */
+.content-panel {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Show active content panel with a smooth fade-in */
+.content-panel.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content-panel h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+.content-panel p {
+  color: #555;
+  line-height: 1.6;
+}
+
